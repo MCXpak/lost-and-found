@@ -3,8 +3,7 @@ const hamburger = document.querySelector("#hamburger-menu");
 const toggleNav = () => {
 
     const nav = document.querySelector("#navigation");
-    const displayType = (nav.style.display === "none") ? "flex" : "none";
-    nav.style.display = displayType;
+    nav.classList.toggle("hidden-on-mobile")
 }
 
 const toggleNavWrapper = (e) => {

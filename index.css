@@ -217,7 +217,10 @@ img {
     }
 
     .navigation {
-        display: none;
         justify-content: space-evenly;
+    }
+
+    .hidden-on-mobile {
+        display: none;
     }
 }
