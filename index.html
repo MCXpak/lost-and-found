@@ -9,13 +9,82 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">Header</header>
+        <header class="header">
+            <a href="#">
+                <img id="logo" alt="lostAndFoundLogo" src="./logo.png">
+            </a>
+            <img src="hamburger-menu.png">
+            <ul class="navigation">
+                <li><a href="#">Location</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">View Posts</a></li>
+                <li><a href="#">Search</a></li>
+            </ul>
+        </header>
         <article class="main">
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
-                tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
-                semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <section class="post">
+                <img src="https://media.graphassets.com/9NFzjzfOQtOY0pbmyUO5" alt="title description">
+                <h4>Ryan's Headphones</h4>
+                <p>Description goes here</p>
+            </section>
+            <section class="post">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvh9cggBylzK3lQm5Lwyqqgkp7lcvloRaPgg&usqp=CAU" alt="title description">
+                <h4>Vanessa's Soul</h4>
+                <p>Description goes here</p>
+            </section>
+            <section class="post">
+                <img src="https://www.engraversguild.co.uk/wp-content/uploads/2017/04/Personalised-Silver-Lighter-Open-1200x1200.jpg" alt="title description">
+                <h4></h4>
+                <p>Description goes here</p>
+            </section>
         </article>
-        <aside class="aside aside-1">Aside 1</aside>
+        <aside class="aside aside-1">
+            <h2>Filters</h2>
+            <form id="filter-form">
+                <div class="filter-form-element">
+                    <label for="area">Area</label>
+                    <select name="area" id="area">
+                       <option value="canada-water">Canada Water</option>
+                       <option value="dalston">Dalston</option>
+                       <option value="walthamstow">Walthamstow</option>
+                       <option value="city-of-london">City of London</option>
+                       <option value="hackney">Hackney</option>
+                       <option value="harringay">Harringay</option>
+                    </select>
+                </div>
+                
+                <div class="filter-form-element">
+                    <label for="date">Date</label>
+                    <input type="date" id="date">
+                </div>
+
+                <div class="filter-form-element">
+                    <label for="type">Item Type</label>
+                    <select name="type" id="type">
+                        <option value="car">Car</option>
+                        <option value="jewellery">Jewellery</option>
+                        <option value="bike">Bike</option>
+                        <option value="soul">Soul</option>
+                    </select>
+                </div>
+
+                <div class="filter-form-element">
+                    <label for="is-alive">Is it alive?</label>
+                    <input type="checkbox" id="is-alive">
+                </div>
+
+                <div class="filter-form-element">
+                    <label for="value">Value</label>
+                    <input type="range" id="value" min="0" max="1.7976931348623157e+308" oninput="this.nextElementSibling.value = this.value">
+                    <output>-100</output>
+                </div>
+
+                <div class="filter-form-element">
+                    <label for="do-you-care">Do you care?</label>
+                    <input type="checkbox" id="do-you-care">
+                </div>
+            </form>
+        </aside>
         <aside class="aside aside-2">Aside 2</aside>
         <footer class="footer">Footer</footer>
     </div>
