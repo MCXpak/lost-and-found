@@ -1,20 +1,33 @@
 
 body {
-    padding: 2em;
+    margin: 0;
+    padding: 0;
+    
 }
 
 .wrapper {
     text-align: center;
     display: flex;
     flex-flow: row wrap;
+    height: auto;
+    min-height: 100vh;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 100vw;
+    min-height: 5vh;
+    max-height: 5vh;
     order: 1;
     background: #34515E;
+}
+
+.hamburger-menu {
+    height: 30px;
+    width: 35px;
+    display: none;
+    padding: 10px;
 }
 
 .navigation {
@@ -40,6 +53,8 @@ body {
 
 .footer {
     width: 100%;
+    max-height: 10vh;
+    min-height: 10vh;
     order: 5;
     background: #34515E;
 }
@@ -47,9 +62,21 @@ body {
 .main {
     order: 3;
     max-width: 50%;
+    min-width: 50%;
+    min-height: 90vh;
     text-align: left;
     background: #607D8B;
     display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+{}
+.make-post {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .post {
@@ -60,9 +87,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-height: 200px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
 img {
+    max-width: 100px;
+}
+
+.post > img {
     max-width: 100px;
 }
 
@@ -71,13 +105,16 @@ img {
 }
 
 .aside-1 {
-    width: 25%;
+    min-width: 25%;
     order: 2;
 }
 
 .aside-2 {
-    width: 25%;
+    min-width: 25%;
     order: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 @media (min-width:600px) and (max-width:900px){
@@ -111,5 +148,26 @@ img {
     .aside-2 {
         min-width: 100%;
         order: 4;
+    }
+
+    .header {
+        flex-direction: column;
+        z-index: 1;
+        min-height: 10vh;
+    }
+
+    .header-top-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hamburger-menu {
+        display: initial;
+    }
+
+    .navigation {
+        display: none;
+        justify-content: space-evenly;
     }
 }

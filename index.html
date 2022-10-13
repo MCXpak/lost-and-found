@@ -5,16 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
     <link rel="stylesheet" href="./index.css"></link>
+    <script defer src="index.js"></script>
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
-            <a href="#">
-                <img id="logo" alt="lostAndFoundLogo" src="./logo.png">
-            </a>
-            <img src="hamburger-menu.png">
-            <ul class="navigation">
+            <div class="header-top-section">
+                <a href="#">
+                    <img id="logo" alt="lostAndFoundLogo" src="./logo.png">
+                </a>
+                <img alt=hamburger-menu id="hamburger-menu" class="hamburger-menu" src="./hamburger-menu.png">
+            </div>
+            <ul id="navigation" class="navigation">
                 <li><a href="#">Location</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">View Posts</a></li>
@@ -22,6 +26,27 @@
             </ul>
         </header>
         <article class="main">
+            <section class="makePost">
+                <form class="make-post">
+                    <label for="name"> Enter your name</label>
+                    <input type="text" name="name" id="name" placeholder="enter name">
+
+                    <label for="lost-item">What have you lost?</label>
+                    <input type="text" name="lost-item" id="lost-item" placeholder="">
+    
+                    <label for="additional-details"> Enter additional details </label>
+                    <input type="textarea" name="additional-details" rows="4" cols="50">
+    
+                    <label for="userImg">Upload image of lost item</label>
+                    <input type="file" id="userImg" name="userImg" accept="image/png, image/jpg">
+
+                    <label for="number">Contact Number</label>
+                    <input type="tel" name="number" id="number">
+
+                    <label for="email">Contact email</label>
+                    <input type="email" name="email" id="email">
+                </form>
+            </section>
             <section class="post">
                 <img src="https://media.graphassets.com/9NFzjzfOQtOY0pbmyUO5" alt="title description">
                 <h4>Ryan's Headphones</h4>
@@ -34,13 +59,30 @@
             </section>
             <section class="post">
                 <img src="https://www.engraversguild.co.uk/wp-content/uploads/2017/04/Personalised-Silver-Lighter-Open-1200x1200.jpg" alt="title description">
-                <h4></h4>
+                <h4>Elliot's Ligher</h4>
+                <p>Description goes here</p>
+            </section>
+            <section class="post">
+                <img src="https://media.graphassets.com/9NFzjzfOQtOY0pbmyUO5" alt="title description">
+                <h4>Ryan's Headphones</h4>
+                <p>Description goes here</p>
+            </section>
+            <section class="post">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvh9cggBylzK3lQm5Lwyqqgkp7lcvloRaPgg&usqp=CAU" alt="title description">
+                <h4>Vanessa's Soul</h4>
+                <p>Description goes here</p>
+            </section>
+            <section class="post">
+                <img src="https://www.engraversguild.co.uk/wp-content/uploads/2017/04/Personalised-Silver-Lighter-Open-1200x1200.jpg" alt="title description">
+                <h4>Elliot's Ligher</h4>
                 <p>Description goes here</p>
             </section>
         </article>
         <aside class="aside aside-1">
             <h2>Filters</h2>
             <form id="filter-form">
+                <input type="text" placeholder="Enter to find item">
+                <button>Search</button>
                 <div class="filter-form-element">
                     <label for="area">Area</label>
                     <select name="area" id="area">
@@ -85,7 +127,14 @@
                 </div>
             </form>
         </aside>
-        <aside class="aside aside-2">Aside 2</aside>
+        <aside class="aside aside-2">
+            <h1> Lost Items </h1>
+            <section>Canada Water: 23</section>
+            <section>Dalston: 100</section>
+            <section>City of London: 23</section>
+            <section>Hackney: Type error</section>
+            <section>Harringay: </section>
+        </aside>
         <footer class="footer">Footer</footer>
     </div>
 </body>
