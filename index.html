@@ -30,59 +30,62 @@
                 <form class="make-post">
                     <h1>Create your own post</h1>
                     <label for="name"> Enter your name</label>
-                    <input type="text" name="name" id="name" placeholder="enter name">
+                    <input type="text" name="name" id="name" placeholder="Enter name">
 
                     <label for="lost-item">What have you lost?</label>
-                    <input type="text" name="lost-item" id="lost-item" placeholder="">
+                    <input type="text" name="lost-item" id="lost-item" placeholder="Name of item lost">
     
                     <label for="additional-details"> Enter additional details </label>
-                    <input type="textarea" name="additional-details" rows="20" cols="30">
+                    <input type="textarea" id="additional-details"name="additional-details" rows="20" cols="30" placeholder="More details">
     
                     <label for="userImg">Upload image of lost item</label>
                     <input type="file" id="userImg" name="userImg" accept="image/png, image/jpg">
 
                     <label for="number">Contact Number</label>
-                    <input type="tel" name="number" id="number">
+                    <input type="tel" name="number" id="number" placeholder="Provide phone number">
 
                     <label for="email">Contact email</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" placeholder="Provide email">
+
+                    <button>SUBMIT</button>
                 </form>
             </section>
-            <section class="post">
-                <img src="https://media.graphassets.com/9NFzjzfOQtOY0pbmyUO5" alt="title description">
-                <h4>Ryan's Headphones</h4>
+            <section tabindex="0" class="post">
+                <img src="https://media.graphassets.com/9NFzjzfOQtOY0pbmyUO5" alt="headphones">
+                <h2>Ryan's Headphones</h4>
                 <p>Description goes here</p>
             </section>
-            <section class="post">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvh9cggBylzK3lQm5Lwyqqgkp7lcvloRaPgg&usqp=CAU" alt="title description">
-                <h4>Vanessa's Soul</h4>
+            <section tabindex="0" class="post">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvh9cggBylzK3lQm5Lwyqqgkp7lcvloRaPgg&usqp=CAU" alt="soul">
+                <h2>Vanessa's Soul</h4>
                 <p>Description goes here</p>
             </section>
-            <section class="post">
-                <img src="https://www.engraversguild.co.uk/wp-content/uploads/2017/04/Personalised-Silver-Lighter-Open-1200x1200.jpg" alt="title description">
-                <h4>Elliot's Ligher</h4>
+            <section tabindex="0" class="post">
+                <img src="https://www.engraversguild.co.uk/wp-content/uploads/2017/04/Personalised-Silver-Lighter-Open-1200x1200.jpg" alt="lighter">
+                <h2>Elliot's Ligher</h4>
                 <p>Description goes here</p>
             </section>
-            <section class="post">
-                <img src="https://media.graphassets.com/9NFzjzfOQtOY0pbmyUO5" alt="title description">
-                <h4>Ryan's Headphones</h4>
+            <section tabindex="0" class="post">
+                <img src="https://media.graphassets.com/9NFzjzfOQtOY0pbmyUO5" alt="headphones">
+                <h2>Ryan's Headphones</h4>
                 <p>Description goes here</p>
             </section>
-            <section class="post">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvh9cggBylzK3lQm5Lwyqqgkp7lcvloRaPgg&usqp=CAU" alt="title description">
-                <h4>Vanessa's Soul</h4>
+            <section tabindex="0" class="post">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvh9cggBylzK3lQm5Lwyqqgkp7lcvloRaPgg&usqp=CAU" alt="soul">
+                <h2>Vanessa's Soul</h4>
                 <p>Description goes here</p>
             </section>
-            <section class="post">
-                <img src="https://www.engraversguild.co.uk/wp-content/uploads/2017/04/Personalised-Silver-Lighter-Open-1200x1200.jpg" alt="title description">
-                <h4>Elliot's Ligher</h4>
+            <section tabindex="0" class="post">
+                <img src="https://www.engraversguild.co.uk/wp-content/uploads/2017/04/Personalised-Silver-Lighter-Open-1200x1200.jpg" alt="lighter">
+                <h2 >Elliot's Ligher</h4>
                 <p>Description goes here</p>
             </section>
         </article>
         <aside class="aside aside-1">
-            <h2>Filters</h2>
+            <h2 tabindex="0">Filters</h2>
             <form id="filter-form">
-                <input type="text" placeholder="Enter to find item">
+                <label for="find-item">Item:</label>
+                <input type="text" id="find-item" name="find-item" placeholder="Enter to find item">
                 <button>Search</button>
                 <div class="filter-form-element">
                     <label for="area">Area</label>
@@ -118,8 +121,8 @@
 
                 <div class="filter-form-element">
                     <label for="value">Value</label>
-                    <input type="range" id="value" min="0" max="1.7976931348623157e+308" oninput="this.nextElementSibling.value = this.value">
-                    <output>-100</output>
+                    <input type="range" id="value" min="0" max="100" oninput="this.nextElementSibling.value = this.value">
+                    <output>100</output>
                 </div>
 
                 <div class="filter-form-element">
@@ -128,15 +131,18 @@
                 </div>
             </form>
         </aside>
-        <aside class="aside aside-2">
-            <h1> Lost Items </h1>
-            <section>Canada Water: 23</section>
-            <section>Dalston: 100</section>
-            <section>City of London: 23</section>
-            <section>Hackney: Type error</section>
-            <section>Harringay: </section>
+        <aside tabindex="0" class="aside aside-2">
+            <h1 tabindex="0"> Lost Items </h1>
+            <section tabindex="0">Canada Water: 23</section>
+            <section tabindex="0">Dalston: 100</section>
+            <section tabindex="0">Walthamstow: ∞</section>
+            <section tabindex="0">City of London: 23</section>
+            <section tabindex="0">Hackney: Type error</section>
+            <section tabindex="0">Harringay: </section>
         </aside>
-        <footer class="footer">Footer</footer>
+        <footer class="footer">
+            
+        </footer>
     </div>
 </body>
 </html>

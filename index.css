@@ -34,6 +34,7 @@ body {
     flex-direction: row;
     justify-content: flex-end;
     padding: 0;
+    align-items: center
 }
 
 .navigation a {
@@ -41,6 +42,7 @@ body {
     display: block;
     padding: 1em;
     color: white;
+    /* height */
 }
 
 .navigation a:hover {
@@ -57,7 +59,7 @@ body {
 
 .main {
     order: 3;
-    flex: 2;
+    flex: 4;
     min-height: 90vh;
     text-align: left;
     background: #607D8B;
@@ -89,6 +91,10 @@ body {
     border-radius: 10px;
 }
 
+.make-post>* {
+    width: 100%;
+}
+
 .post {
     background-color: #8EACBB;
     margin: 20px;
@@ -97,7 +103,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-height: 200px;
+    min-height: 200px;
+    min-width: 200px;
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
@@ -123,7 +130,7 @@ img {
     order: 4;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 
 @media (min-width:600px) and (max-width:900px){
@@ -134,7 +141,8 @@ img {
 
     .aside-1 {
         width: 50%;
-        order: 3;   
+        order: 3; 
+        border-right: 4px ridge grey;
     }
 
     .aside-2 {
@@ -151,7 +159,8 @@ img {
 
     .aside-1 {
         min-width: 100%;
-        order: 3;   
+        order: 3;
+        border-bottom: 4px ridge grey;
     }
 
     .aside-2 {
