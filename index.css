@@ -2,7 +2,6 @@
 body {
     margin: 0;
     padding: 0;
-    
 }
 
 .wrapper {
@@ -72,7 +71,10 @@ body {
     flex-wrap: wrap;
 }
 
-{}
+.makePost {
+    width: 100%;
+}
+
 .make-post {
     display: flex;
     flex-direction: column;
